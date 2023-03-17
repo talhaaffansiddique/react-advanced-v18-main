@@ -14,7 +14,9 @@ const ShortCircuit = () => {
       <h1>{firstValue}</h1>
       <h1>Value : {secondValue}</h1>
       <h1>{text || "talha"}</h1>
-      <button className="btn">Toggle error</button>
+      <button className="btn" onClick={() => setis}>
+        Toggle error
+      </button>
       {isError && <h2>Error....</h2>}
     </>
   );
