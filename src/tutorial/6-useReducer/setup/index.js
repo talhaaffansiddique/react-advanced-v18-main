@@ -10,6 +10,13 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name) {
+      setShowModal(true);
+      setPeople([...people, { id: new Date().getTime().toString(), name }]);
+      setName("");
+    } else {
+      setShowModal(true);
+    }
   };
 
   return (
@@ -25,6 +32,13 @@ const Index = () => {
         </div>
         <button type="submit">ADD</button>
       </form>
+      {people.map((person) => {
+        return (
+          <div key={person.id}>
+            <h4>{person.name}</h4>
+          </div>
+        );
+      })}
     </>
   );
 };
