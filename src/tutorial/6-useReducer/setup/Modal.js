@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 
-const Modal = () => {
+const Modal = ({ modalContent }) => {
   return (
     <>
-      <div>i'm modal</div>
+      <div className="modal">
+        <p>{modalContent}</p>
+      </div>
     </>
   );
 };
