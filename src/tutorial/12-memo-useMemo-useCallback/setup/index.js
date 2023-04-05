@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
-import { useFetch } from "../../9-custom-hooks/final/2-useFetch";
+import { useFetch } from "../../9-custom-hooks/setup/2-useFetch";
 
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
